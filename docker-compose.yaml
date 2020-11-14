@@ -16,19 +16,3 @@ services:
 networks: 
     dockersql-network:
         driver: bridge
-
-# version: '3.2'
-# services:
-#   db:
-#     image: mcr.microsoft.com/mssql/server:2019-latest
-#     ports:
-#       - "1433:1433"
-#     environment:
-#       - sa_password=Secret12345
-#       - ACCEPT_EULA=Y      
-#     volumes: 
-#       - ./data:/mssqldata
-#     container_name: sqlserver_db1
-# networks: 
-#     dockersql-network:
-#         driver: bridge
