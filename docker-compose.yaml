@@ -1,0 +1,13 @@
+sql_server:
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        hostname: sql_server
+        container_name: sql_server
+        ports:
+            - "1435:1433"
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_SA_PASSWORD=Password123!
+        volumes: 
+            - ./data:/mssqldata
+        networks:
+            - localhost
