@@ -9,5 +9,3 @@ sql_server:
             - MSSQL_SA_PASSWORD=Password123!
         volumes: 
             - ./data:/mssqldata
-        networks:
-            - localhost
